@@ -6,6 +6,7 @@ build:
       code: | 
         echo "do something"
     - internal/docker-push:
-      repository: wcr.io/nigeldeakin/docker-push-no-registry-repository
+      repository: nigeldeakin/docker-push-no-registry-repository
+      registry: https://docker.io
       username: $REPO_USERNAME
       password: $REPO_PASSWORD
